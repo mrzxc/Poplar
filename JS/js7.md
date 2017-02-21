@@ -37,7 +37,7 @@ nodeName 属性规定节点的名称：
 
 nodeValue 属性：    
 
-* 元素节点的 nodeValue 是 undefined 或 null
+* 元素节点的 nodeValue 始终是 null
 * 文本节点的 nodeValue 是文本本身
 * 属性节点的 nodeValue 是属性值   
 
@@ -62,7 +62,7 @@ nodeValue 属性：
 这里答案是5，也就是说demo节点下面有5个子节点。有可能你会问，demo下面明明有2个节点啊。我们输出childNodes看一下：  
 ![](/image/js7-4.png)  
 我们可以看见，打印出的数组中，除了`div`还有`text`这个是文本节点。文本节点的内容是"回车符号"，这是我们在写代码的时候
-回车换行所带入的。上面列出的节点关系中，都是要考虑文本节点的。信号后来又添加了几个属性来补充节点关系：   
+回车换行所带入的。上面列出的节点关系中，都是要考虑文本节点的。幸好后来又添加了几个属性来补充节点关系：   
 
 * childeElementCount: 返回子元素(不包括文本节点和注释)的个数  
 * firstElementChild: 指向第一个子元素
