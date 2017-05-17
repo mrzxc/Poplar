@@ -202,7 +202,7 @@ if (! ('forEach' in arrayPrototype)) {
 ```  
 
 #### filter  
-对数组中每一项运行给定函数，返回该函数返回true的函数  
+对数组中每一项运行给定函数，返回该函数返回true的结果集合  
 
 ```javascript   
 if (! ('filter' in arrayPrototype)) {
