@@ -30,7 +30,7 @@ console.log(str.trim());  //SIPC
 
 ```javascript  
 function trim(string){
-    return string.replace(/^s\s*/,'').replace(/\s\s*$/,'');
+    return string.replace(/^\s\s*/,'').replace(/\s\s*$/,'');
 }  
 ```  
 
