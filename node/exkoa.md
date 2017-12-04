@@ -31,13 +31,13 @@ app.listen(3000);
 Koa 代码如下： 
 
 ```js   
-var koa = require('koa'); 
+var Koa = require('koa'); 
 var route = require('koa-route');  //koa默认没有集成route功能，引入中间件 
  
-var app = koa();  //创建一个APP实例 
+var app = new Koa();  //创建一个APP实例 
  
 //建一个项目根目录的get请求路由，回调方法中直接输出字符串Hello World!，就是挂载一个中间件 
-app.use(route.get('/', function *(){ 
+app.use(route.get('/', function (){ 
     this.body = 'Hello World'; 
 })); 
  
